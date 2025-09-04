@@ -1,0 +1,129 @@
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    align-items: center;
+    background-color: #0d1117;
+}
+
+h1 {
+    color: #f0f6fc;
+    font-family: "Poppins", sans-serif;
+}
+
+textarea {
+    resize: vertical;
+}
+
+li {
+    padding: 2%;
+    border-radius: 12px;
+    background: linear-gradient(135deg,rgba(255, 255, 255, 0.05),rgba(255, 255, 255, 0.01));
+    list-style: none;
+    transition: transform 0.5s ease;
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+
+li:active {
+    transform: scale(1);
+    transition: transform 0.1s ease;
+}
+
+.boxTitle {
+    color: #c9d1d9;
+    font-family: "Poppins", sans-serif;
+}
+
+#emailBox {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 2%;
+    background: linear-gradient(135deg,rgba(255, 255, 255, 0.05),rgba(255, 255, 255, 0.01));
+    border-radius: 12px;
+}
+
+#emailInput {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 2%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    color: #c9d1d9;
+    font-family: "Inter", sans-serif;
+}
+
+#emailInput:focus {
+    outline: none;
+}
+
+#generateBtn {
+    width: fit-content;
+    height: clamp(5vh, 5vh, 5vw);
+    margin-left: auto;
+    background-color: #238636;
+    border: none;
+    border-radius: 60px;
+    color: #0d1117;
+    font-family: "Poppins", sans-serif;
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+#generateBtn:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: #2ea043;
+}
+
+#generateBtn:active {
+    transform: scale(1);
+    transition: transform 0.1s ease;
+}
+
+#generateBtn:focus {
+    outline: none;
+}
+
+#inputWarning {
+    width: 25%;
+    height: fit-content;
+    display: none;
+    gap: 5%;
+    align-items: center;
+    padding: 1%;
+    border-radius: 6px;
+    background-color: rgba(255, 76, 76, 0.8);
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+}
+
+#loader {
+    display: none;
+    width: 5%;
+    height: auto;
+}
+
+.warningIcon {
+    width: 8%;
+    height: auto;
+}
+
+#repliesBox {
+    width: 50%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#repliesList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    font-family: "Inter", sans-serif;
+    color: #c9d1d9;
+}

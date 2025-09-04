@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="static/style.css">
+        <title>E-mail Replier</title>
+        <link rel="icon" href="static/assets/icon.png">
+    </head>
+    <body>
+        <h1>Gerador de E-mails automáticos</h1>
+        <div id="emailBox">
+            <span class="boxTitle">E-mail Recebido:</span>
+            <textarea id="emailInput" placeholder="Cole o e-mail aqui..." rows="6" cols="60"></textarea>
+            <button id="generateBtn">Gerar Respostas</button>
+        </div>
+        <div id="inputWarning"><img class="warningIcon" src="static/assets/warning.png">Você precisa inserir um e-mail no campo acima.</div>
+        <img id="loader" src="static/assets/loader.gif">
+        <div id="repliesBox">
+            <span class="boxTitle">Sugestões de Resposta:</span>
+            <ul id="repliesList">
+            </ul>
+        </div>
+        <script src="static/script.js"></script>
+    </body>
+</html>
