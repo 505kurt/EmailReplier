@@ -18,7 +18,7 @@ generateBtn.addEventListener("click", async () => {
         loader.style.display = "flex";
 
         try {
-            const response = await fetch("http://127.0.0.1:8000/api/generate-replies", {
+            const response = await fetch("https://emailreplier.onrender.com/api/generate-replies", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
